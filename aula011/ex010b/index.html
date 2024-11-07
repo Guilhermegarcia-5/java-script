@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <main>
+        <section>
+            <label for="ina">País</label>
+            <input type="text" name="na" id="ina" autocomplete="off">
+        </section>
+
+        <input type="button" value="Enviar" id="botao">
+        <p id="msg"></p>
+    </main>
+    <script>
+        var msg = document.getElementById('msg')
+        var b = document.getElementById('botao')
+        b.addEventListener('click', clicou)
+        b.addEventListener('mouseout', sair)
+        b.addEventListener('mouseenter', entrar)
+
+        function clicou() {
+            var txt = document.getElementById('ina')
+            var pais = String(txt.value)
+            if (pais == 'brasil') {
+                msg.innerHTML = '<h2>Você é brasileiro '
+                msg.style.marginLeft = '-200px'
+            } else {
+                msg.innerHTML = '<h2>Você é estrangeiro'
+            }
+        }
+        function sair() {
+            msg.style.color = 'transparent'
+        }
+        function entrar() {
+            msg.style.color = 'black'
+        }
+    </script>
+</body>
+</html>
