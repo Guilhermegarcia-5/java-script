@@ -70,6 +70,7 @@
             justify-content: flex-end;
             align-items: center;
             box-shadow: 1px 1px 5px black;
+            padding-left: 4px;
         }
         
     </style>
@@ -77,13 +78,18 @@
 <body>
     <h1>Multagem</h1>
     <main>
+
         <section>
             <label for="ivel">Velocidade</label>
             <input type="number" name="vel" id="ivel">
         </section>
+
         <input type="button" value="Enviar" onclick="enviar()" onmouseout="sair()" onmouseenter="entrar()" id="botao">
+
     </main>
+
     <p id="msg"></p>
+
     <script>
         var vel = document.getElementById('ivel')
         p = document.getElementById('msg')
