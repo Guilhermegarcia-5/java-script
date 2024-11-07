@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            background-image: linear-gradient();
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+</body>
+<script>
+    var a = document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseout', saiu)
+    a.addEventListener('mouseenter', entrou)
+    function clicar() {
+        a.innerHTML = 'clicou'
+        a.style.backgroundImage = 'linear-gradient(to bottom, black, 60%, red)'
+    }
+
+    function saiu() {
+        a.innerHTML = 'saiu'
+    }
+
+    function entrou() {
+        a.innerHTML = 'entrou'
+    }
+</script>
+</html>

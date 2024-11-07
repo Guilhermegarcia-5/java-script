@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 31pt;
+            text-shadow: 1px 1px 5px black;
+            color: white;
+            text-indent: 10px;
+        }
+
+        body{
+            background-image: linear-gradient(to left, blue, rgb(133, 133, 224) );
+        }
+        
+        main{
+            display: flex;
+        }
+
+        #ivel{
+            background-color: black;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            padding: 5px;
+            width: 50px;
+            text-align: center;
+            padding-right: 10.2px;
+            height: 31px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        label{
+            margin-right: 5px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            color: darkred;
+        }
+
+        #botao{
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: orange;
+            border: 2px solid orange;
+            margin-left: 5px;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px black;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        #botao:hover{
+            background-color: yellow;
+            border: 2px solid yellow;
+            transition: 0.5s;
+        }
+
+        section{
+            display: flex;
+            background-color: white;
+            width: 150px;
+            border-radius: 20px;
+            margin-right: -2px;
+            border: 2px solid white;
+            padding-bottom: -50px;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 1px 1px 5px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Multagem</h1>
+    <main>
+        <section>
+            <label for="ivel">Velocidade</label>
+            <input type="number" name="vel" id="ivel">
+        </section>
+        <input type="button" value="Enviar" onclick="enviar()" onmouseout="sair()" onmouseenter="entrar()" id="botao">
+    </main>
+    <p id="msg"></p>
+    <script>
+        var vel = document.getElementById('ivel')
+        p = document.getElementById('msg')
+        function enviar() {
+            if (Number(vel.value) > 60) {
+                p.innerHTML = '<h2>MULTADO, dirija com cuidado</h2>'
+            } else {
+                p.innerHTML = '<h2>dirija com cuidado</h2>'
+                p.style.textshadow = '1px 1px 2px black'
+            }
+        }
+        function sair() {
+            p.style.color = 'transparent'
+        }
+        function entrar() {
+            p.style.color = 'black'
+            p. textshadow = '2px 2px 2px black;'
+        }
+    </script>
+</body>
+</html>

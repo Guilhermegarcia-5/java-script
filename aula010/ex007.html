@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <form action="">
+        <label for="itxt1">Numero 1</label>
+        <input type="number" name="txt1" id="itxt1"><br><br>
+        <label for="itxt2">Numero 2</label>
+        <input type="number" name="txt2" id="itxt2"><br><br>
+        <input type="button" value="Somar" onclick="clicou()">
+        <br><br><div id="res">Soma:</div>
+    </form>
+    <script>
+        function clicou() {
+            var n1 = document.getElementById('itxt1')
+            var n2 = document.getElementById('itxt2')
+            var res = document.getElementById('res')
+            s = Number(n1.value) + Number(n2.value)
+            res.innerText = `Soma: ${s}`
+        }
+    </script>
+</body>
+</html>
