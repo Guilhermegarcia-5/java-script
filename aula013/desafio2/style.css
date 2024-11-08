@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(123, 123, 253);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(190, 179, 179);
+    text-shadow: 1px 1px 2px black;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 2px 2px 8px black;
+    margin: auto;
+    width: 90%;
+}
+
+#iano {
+    background-color: gray;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 3px black;
+}
+
+#msg {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    box-shadow: 1px 1px 2px black;
+    margin: auto;
+}
+
+#botao {
+    display: block;
+    margin: auto;
+    background-color: rgb(253, 253, 90);
+    margin-top: 25px;
+    border-radius: 60px;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    font-size: 120%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 3px black;
+}
+
+footer {
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1em;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+#m1{
+    display: none;
+}
+
+#m2{
+    display: none;
+}
+
+#m3{
+    display: none;
+}
+
+#m4{
+    display: none;
+}
+
+#m5{
+    display: none;
+}
+
+#m6{
+    display: none
+}
+
+#f1{
+    display: none
+}
+
+#f2{
+    display: none
+}
+
+#f3{
+    display: none
+}
+
+#f4{
+    display: none
+}
+
+#f5{
+    display: none
+}
+
+#f6{
+    display: none
+}
+
+@media  screen and (min-width: 500px) {
+    section{
+        width: 250px;
+    }
+}
+
