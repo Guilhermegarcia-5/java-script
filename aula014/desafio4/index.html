@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #msg{
+            overflow-y: scroll;
+            overflow-x: scroll;
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div>
+                <p>Tabuada<p>
+            </div>
+    </header>
+    <section>
+        <label for="it">Tabuada</label>
+        <input type="number" name="t" id="it"><br><br>
+        <label for="in">Número</label>
+        <input type="number" name="n" id="in"><br><br>
+        <input type="button" value="Gerar Tabuada" id="b"><br><br>
+
+        <div id="msg">
+            Sua tabuada aparecerá aqui
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

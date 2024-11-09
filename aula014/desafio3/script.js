@@ -15,10 +15,12 @@ function contar() {
     nf = Number(f.value)
     np = Number(p.value)
 
+    msg.innerHTML = ''
+
     if (ni && nf && np > 0) {
     for (ni; ni <= nf; ni += np) {
         msg2.innerHTML = `Contando...`
-        msg.innerHTML += `${ni}➡️`
+        msg.innerHTML += `${ni}&#x1F449`
         erro.innerHTML = ''
     }
 
@@ -35,4 +37,5 @@ function limpar() {
     i.value = ''
     f.value = ''
     p.value = ''
+    erro.innerHTML = ''
 }
