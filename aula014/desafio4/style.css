@@ -12,9 +12,11 @@ header {
     font-family: "Edu AU VIC WA NT Pre", cursive;
     font-size: 3em;
     font-weight: lighter;
+    background-attachment: fixed;
 }
 
 section{
+    position: relative;
     margin: auto;
     width: 200px;
     background-color: aqua;
@@ -47,9 +49,18 @@ input{
 }
 
 @keyframes mudarCor { 
-0% { background-color: rgb(255, 167, 167); } 
-25% { background-color: rgb(241, 241, 158); } 
-50% { background-color: rgb(142, 243, 142); } 
-75% { background-color: rgb(171, 171, 253); } 
-100% { background-color: rgb(253, 171, 171); } } section{ animation: mudarCor 15s infinite; }
+0% { background-color: rgb(255, 167, 167);} 
+25% { background-color: rgb(241, 241, 158);} 
+50% { background-color: rgb(142, 243, 142);} 
+75% { background-color: rgb(171, 171, 253);} 
+100% { background-color: rgb(253, 171, 171); } } section{ animation: mudarCor 10s infinite; }
+
+@keyframes mudartexto { 
+    0% {font-size: 100%;} 
+    25% {font-size: 101%;} 
+    50% {font-size: 102%;} 
+    75% {font-size: 101%;} 
+    100% {font-size: 100%;} } p, div, label{ 
+        animation: mudartexto 1s infinite; } 
+
 
